@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/secondConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background">
+
+            <ImageView
+                android:id="@+id/brown_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/img_goicho_oniko"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/black_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/img_black_fish"
+                app:layout_constraintBottom_toTopOf="@+id/brown_image"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/green_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/img_restro"
+                app:layout_constraintBottom_toTopOf="@+id/black_image"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/yellow_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/img_conrad_food"
+                app:layout_constraintBottom_toTopOf="@+id/green_image"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/popular_restaurants_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginBottom="34dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Popular Restaurants"
+                android:textColor="#18172B"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/yellow_image"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/preferences_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="26dp"
+                android:src="@drawable/img_preferences"
+                app:layout_constraintBottom_toTopOf="@+id/yellow_image"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/nav_image"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="36dp"
+                android:src="@drawable/img_navigation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/home_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="2dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Home"
+                android:textColor="#18172B"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toTopOf="@+id/address_text"
+                app:layout_constraintStart_toEndOf="@+id/nav_image"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/address_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="40dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="242 ST Marks Eve, Finland "
+                android:textColor="#6E80B0"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/asian_text"
+                app:layout_constraintStart_toEndOf="@+id/nav_image" />
+
+            <TextView
+                android:id="@+id/all_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:drawableTop="@drawable/img_all"
+                android:drawablePadding="8dp"
+                android:text="All"
+                android:textAlignment="center"
+                android:textColor="#6E80B0"
+                app:layout_constraintBottom_toTopOf="@+id/popular_restaurants_text"
+                app:layout_constraintEnd_toStartOf="@+id/pizza_text"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="spread"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/pizza_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:drawableTop="@drawable/img_pizza"
+                android:drawablePadding="8dp"
+                android:text="Pizza"
+                android:textAlignment="center"
+                android:textColor="#6E80B0"
+                app:layout_constraintBottom_toTopOf="@+id/popular_restaurants_text"
+                app:layout_constraintEnd_toStartOf="@+id/beverages_text"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/all_text" />
+
+            <TextView
+                android:id="@+id/beverages_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:drawableTop="@drawable/img_beverages"
+                android:drawablePadding="8dp"
+                android:text="Beverages"
+                android:textAlignment="center"
+                android:textColor="#6E80B0"
+                app:layout_constraintBottom_toTopOf="@+id/popular_restaurants_text"
+                app:layout_constraintEnd_toStartOf="@+id/asian_text"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/pizza_text" />
+
+            <TextView
+                android:id="@+id/asian_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:drawableTop="@drawable/img_asian"
+                android:drawablePadding="8dp"
+                android:text="Asian"
+                android:textAlignment="center"
+                android:textColor="#6E80B0"
+                app:layout_constraintBottom_toTopOf="@+id/popular_restaurants_text"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/beverages_text" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></RelativeLayout>
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+
+                android:id="@+id/bottomNavigationView"
+                android:layout_width="391dp"
+                android:layout_height="96dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/home_button"
+                        android:layout_width="104dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="24dp"
+                        android:background="@drawable/btn_home"
+                        android:drawableStart="@drawable/img_home"
+                        android:padding="12dp"
+                        android:text="@string/home"
+                        android:textAllCaps="false"
+                        android:textColor="#6D61F2"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/search_image"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintHorizontal_chainStyle="spread"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/search_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_search"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/shopping_image"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/home_button"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/shopping_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_shopping_bag"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/user_image"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/search_image"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/user_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_user"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toEndOf="@+id/shopping_image"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Conrad food"
+                app:layout_constraintBottom_toTopOf="@+id/textView20"
+                app:layout_constraintStart_toEndOf="@+id/yellow_image" />
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="60dp"
+                android:text="50% OFF"
+                app:layout_constraintBottom_toTopOf="@+id/textView13"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="60dp"
+                android:text="40% OFF"
+                app:layout_constraintBottom_toTopOf="@+id/textView14"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView14"
+                style="@style/off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="60dp"
+                android:text="40% OFF"
+                app:layout_constraintBottom_toTopOf="@+id/textView15"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView15"
+                style="@style/off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="50dp"
+                android:text="50% OFF"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <TextView
+                android:id="@+id/textView16"
+                style="@style/restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="SK Restro"
+                app:layout_constraintBottom_toTopOf="@+id/textView21"
+                app:layout_constraintStart_toEndOf="@+id/green_image" />
+
+            <TextView
+                android:id="@+id/textView17"
+                style="@style/restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Black Fish"
+                app:layout_constraintBottom_toTopOf="@+id/textView22"
+                app:layout_constraintStart_toEndOf="@+id/black_image" />
+
+            <TextView
+                android:id="@+id/textView18"
+                style="@style/restaurant"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="Goichi Oniko"
+                app:layout_constraintBottom_toTopOf="@+id/textView19"
+                app:layout_constraintStart_toEndOf="@+id/brown_image" />
+
+            <TextView
+                android:id="@+id/textView19"
+                style="@style/scores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginBottom="24dp"
+                android:drawableStart="@drawable/img_star"
+                android:text="4.0 •"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintStart_toEndOf="@+id/brown_image" />
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/scores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginBottom="32dp"
+                android:drawableStart="@drawable/img_star"
+                android:text="4.6 •"
+                app:layout_constraintBottom_toTopOf="@+id/textView16"
+                app:layout_constraintStart_toEndOf="@+id/yellow_image" />
+
+            <TextView
+                android:id="@+id/textView21"
+                style="@style/scores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginBottom="32dp"
+                android:drawableStart="@drawable/img_star"
+                android:text="4.4 •"
+                app:layout_constraintBottom_toTopOf="@+id/textView17"
+                app:layout_constraintStart_toEndOf="@+id/green_image" />
+
+            <TextView
+                android:id="@+id/textView22"
+                style="@style/scores"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginBottom="32dp"
+                android:drawableStart="@drawable/img_star"
+                android:text=" 4.3 •"
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintStart_toEndOf="@+id/black_image" />
+
+            <TextView
+                android:id="@+id/textView23"
+                style="@style/restaurant_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="32dp"
+                android:text="Pizza  •  "
+                app:layout_constraintBottom_toTopOf="@+id/textView16"
+                app:layout_constraintStart_toEndOf="@+id/textView20" />
+
+            <TextView
+                android:id="@+id/textView24"
+                style="@style/restaurant_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="32dp"
+                android:text="Chienese  • "
+                app:layout_constraintBottom_toTopOf="@+id/textView17"
+                app:layout_constraintStart_toEndOf="@+id/textView21" />
+
+            <TextView
+                android:id="@+id/textView25"
+                style="@style/restaurant_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="32dp"
+                android:text="Seafood • "
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintStart_toEndOf="@+id/textView22" />
+
+            <TextView
+                android:id="@+id/textView26"
+                style="@style/restaurant_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="24dp"
+                android:text="Fastfood  • "
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintStart_toEndOf="@+id/textView19" />
+
+            <TextView
+                android:id="@+id/textView27"
+                style="@style/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="32dp"
+                android:drawableStart="@drawable/img_timer"
+                android:drawablePadding="4dp"
+                android:text="15 min"
+                app:layout_constraintBottom_toTopOf="@+id/textView16"
+                app:layout_constraintStart_toEndOf="@+id/textView23" />
+
+            <TextView
+                android:id="@+id/textView28"
+                style="@style/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="32dp"
+                android:drawableStart="@drawable/img_timer"
+                android:drawablePadding="4dp"
+                android:text="30 min"
+                app:layout_constraintBottom_toTopOf="@+id/textView17"
+                app:layout_constraintStart_toEndOf="@+id/textView24" />
+
+            <TextView
+                android:id="@+id/textView29"
+                style="@style/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="32dp"
+                android:drawableStart="@drawable/img_timer"
+                android:drawablePadding="4dp"
+                android:text="20 min"
+                app:layout_constraintBottom_toTopOf="@+id/textView18"
+                app:layout_constraintStart_toEndOf="@+id/textView25" />
+
+            <TextView
+                android:id="@+id/textView30"
+                style="@style/timer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="24dp"
+                android:drawableStart="@drawable/img_timer"
+                android:drawablePadding="4dp"
+                android:text="20 min"
+                app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+                app:layout_constraintStart_toEndOf="@+id/textView26" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

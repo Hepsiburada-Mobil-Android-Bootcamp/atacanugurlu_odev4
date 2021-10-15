@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">odev4_atacanugurlu</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="don_t_have_an_account_create">Don’t have an account? Create</string>
+    <string name="dont_have_an_account">Don\'t have an account?</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="create"><u>Create</u></string>
+    <string name="home">Home</string>
+    <string name="write_something_and_press_send">Write something and press SEND..</string>
+    <string name="back_to_login_screen">Back to login screen</string>
+    <string name="add_live_data">Add Live Data</string>
+    <string name="send">Send</string>
+</resources>
